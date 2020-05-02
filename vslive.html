@@ -12,11 +12,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Codelabs provide a guided, tutorial, hands-on coding experience. Most codelabs will step you through the process of building a small application, or adding a new feature to an existing application.">
+  <meta name="description" content="Come learn about Google Cloud Platform by completing codelabs and coding challenges! The following codelabs will step you through using different parts of Google Cloud Platform. These challenges cover a range of topics such as Compute Engine, App Engine, Kubernetes, Cloud Shell. Go to https://g.co/codelabs/vslive to find more codelabs you can try at home.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Codelabs">
-  <meta name="application-name" content="Codelabs">
-  <link rel="canonical" href="https://example.com/" />
+  <meta name="generator" content="Visual Studio Live">
+  <meta name="application-name" content="Visual Studio Live">
+  <link rel="canonical" href="https://example.com/vslive/" />
   <link rel="preconnect" href="https://www.google-analytics.com" />
 
   <script>
@@ -27,7 +27,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-  <title>Codelabs</title>
+  <title>Visual Studio Live</title>
 
   <link rel="stylesheet" href="/styles/main.css">
 
@@ -55,7 +55,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#455a64">
-  <meta name="apple-mobile-web-app-title" content="Codelabs">
+  <meta name="apple-mobile-web-app-title" content="Visual Studio Live">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="194x194" href="/images/favicons/favicon-194x194.png">
@@ -68,9 +68,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="theme-color" content="#455a64">
 
   <meta name="og:type" property="og:type" content="website" />
-  <meta name="og:title" property="og:title" content="Codelabs" />
-  <meta name="og:description" property="og:description" content="Codelabs provide a guided, tutorial, hands-on coding experience. Most codelabs will step you through the process of building a small application, or adding a new feature to an existing application." />
-  <meta name="og:url" property="og:url" content="https://example.com/" />
+  <meta name="og:title" property="og:title" content="Visual Studio Live" />
+  <meta name="og:description" property="og:description" content="Come learn about Google Cloud Platform by completing codelabs and coding challenges! The following codelabs will step you through using different parts of Google Cloud Platform. These challenges cover a range of topics such as Compute Engine, App Engine, Kubernetes, Cloud Shell. Go to https://g.co/codelabs/vslive to find more codelabs you can try at home." />
+  <meta name="og:url" property="og:url" content="https://example.com/vslive/" />
   <meta name="og:site_name" property="og:site_name" content="Codelabs" />
   <meta name="og:determiner" property="og:determiner" content="the" />
   <meta name="og:locale" property="og:locale" content="en_US" />
@@ -82,13 +82,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="og:image:alt" property="og:image:alt" content="Codelabs" />
 
   <meta name="twitter:card" property="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" property="twitter:title" content="Codelabs" />
-  <meta name="twitter:description" property="twitter:description" content="Codelabs provide a guided, tutorial, hands-on coding experience. Most codelabs will step you through the process of building a small application, or adding a new feature to an existing application." />
+  <meta name="twitter:title" property="twitter:title" content="Visual Studio Live" />
+  <meta name="twitter:description" property="twitter:description" content="Come learn about Google Cloud Platform by completing codelabs and coding challenges! The following codelabs will step you through using different parts of Google Cloud Platform. These challenges cover a range of topics such as Compute Engine, App Engine, Kubernetes, Cloud Shell. Go to https://g.co/codelabs/vslive to find more codelabs you can try at home." />
   <meta name="twitter:image" property="twitter:image" content="/images/og-image.png" />
-  <meta name="twitter:url" property="twitter:url" content="https://example.com/" />
+  <meta name="twitter:url" property="twitter:url" content="https://example.com/vslive/" />
 </head>
 
-<body id="app" is="body-bind" class="loading fullbleed ">
+<body id="app" is="body-bind" class="loading fullbleed view">
   <paper-header-panel id="main" mode="standard" main>
     
     <div id="mainToolbar" class="paper-header">
@@ -108,20 +108,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
 
     
-    <header id="banner" down$="[[_toBoolean(selectedFilter)]]">
+    <header id="banner" down>
       <div class="site-width">
-        
-        <h2 class="banner-title">Welcome to Codelabs!</h2>
-        <div class="banner-description"
-             data-filter-selected$="[[_toBoolean(selectedFilter)]]">
-          <p class="banner-info">
-            Codelabs provide a guided, tutorial, hands-on
-            coding experience. Most codelabs will step you through the process
-            of building a small application, or adding a new feature to an
-            existing application.
-            <br>
-            <a href="https://github.com/googlecodelabs/tools">Codelab tools on GitHub</a>
-          </p>
+        <div class="banner-description">
+            <img id="logo" src="/vslive/vslive-logo.jpg" alt="Event logo">
+            <div class="banner-meta">
+              <h3>Visual Studio Live</h3>
+              <p>Come learn about Google Cloud Platform by completing codelabs and coding challenges! The following codelabs will step you through using different parts of Google Cloud Platform. These challenges cover a range of topics such as Compute Engine, App Engine, Kubernetes, Cloud Shell. Go to https://g.co/codelabs/vslive to find more codelabs you can try at home.</p>
+              
+            </div>
           </div>
       </div>
     </header>
@@ -136,69 +131,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </paper-tabs>
         </div>
 
-        
-        <paper-dropdown-menu
-          label="Choose an event"
-          class="dropdown-filter"
-          no-label-float
-          noink no-animations
-        >
-          <paper-listbox
-            id="eventList"
-            slot="dropdown-content"
-            class="dropdown-content"
-          ><a href="/vslive/" tabindex="-1">
-                  <paper-item>Visual Studio Live</paper-item>
-                </a>
-              
-          </paper-listbox>
-        </paper-dropdown-menu>
         </div>
 
       <card-sorter id="cards" class="site-width">
         
-          
-            
-            <a href="/codelabs/c390-pd/index.html?index=..%2F..index" on-tap="navigate"
-               class="codelab-card category-web"
-               data-category="Web"
-               data-title="C390 - Portfolio Development Module"
-               data-duration="0"
-               data-updated="2019-09-24T08:41:44Z"
-               data-tags="cds17,chrome-dev-summit-2016,devfest18,gdd17,io2016,io2017,io2018,io2019,jsconfeu,kiosk,pwa-dev-summit,pwa-roadshow,tag-web,typtwd17,web"
-               data-pin="">
-              <div class="description">C390 - Portfolio Development Module</div>
-              <div class="card-duration">
-                <span></span>
-                <span>Updated Sep 24, 2019</span>
-              </div>
-              <div class="card-footer">
-                <div class="category-icon web-icon"></div>
-                <paper-button class="web-bg">Start</paper-button>
-              </div>
-            </a>
-          
-          
-            
-            <a href="/codelabs/your-first-pwapp/index.html?index=..%2F..index" on-tap="navigate"
-               class="codelab-card category-web"
-               data-category="Web"
-               data-title="Your First Progressive Web App"
-               data-duration="0"
-               data-updated="2019-09-05T03:21:45Z"
-               data-tags="cds17,chrome-dev-summit-2016,devfest18,gdd17,io2016,io2017,io2018,io2019,jsconfeu,kiosk,pwa-dev-summit,pwa-roadshow,tag-web,typtwd17,web"
-               data-pin="">
-              <div class="description">Your First Progressive Web App</div>
-              <div class="card-duration">
-                <span></span>
-                <span>Updated Sep 5, 2019</span>
-              </div>
-              <div class="card-footer">
-                <div class="category-icon web-icon"></div>
-                <paper-button class="web-bg">Start</paper-button>
-              </div>
-            </a>
-          
       </card-sorter>
 
       <div id="loading-placeholder" class="site-width">
